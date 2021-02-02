@@ -27,7 +27,7 @@
     "@accounts/graphql-api": "^0.13.0",
     "@accounts/mongo": "^0.13.0",
     "@accounts/password": "^0.13.0",
-    "@accounts/server": "^0.13.0",
+    "@accounts/server": "^0.31.0",
     "@graphql-modules/core": "^0.7.5",
     "apollo-server": "^2.6.1",
     "apollo-server-express": "^2.6.1",
