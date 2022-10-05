@@ -6,7 +6,9 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "watch": "nodemon -e ts -w ./src -x npm run watch:serve",
-    "watch:serve": "ts-node src/index.ts"
+    "watch:serve": "ts-node src/index.ts",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
@@ -27,22 +29,24 @@
     "@accounts/graphql-api": "^0.13.0",
     "@accounts/mongo": "^0.13.0",
     "@accounts/password": "^0.13.0",
-    "@accounts/server": "^0.13.0",
-    "@graphql-modules/core": "^0.7.5",
-    "apollo-server": "^2.6.1",
-    "apollo-server-express": "^2.6.1",
+    "@accounts/server": "^0.32.0",
+    "@graphql-modules/core": "^0.7.14",
+    "apollo-server": "^3.0.0",
+    "apollo-server-express": "^3.0.0",
     "config": "^3.1.0",
     "graphql": "^14.3.1",
-    "graphql-toolkit": "^0.2.14",
-    "mongoose": "^5.5.12",
-    "plaid": "^4.0.0",
+    "graphql-toolkit": "^0.6.0",
+    "mongoose": "^5.13.15",
+    "plaid": "^9.0.0",
     "reflect-metadata": "^0.1.13",
-    "type-graphql": "^0.17.4",
-    "typegoose": "^5.6.0"
+    "type-graphql": "^0.17.6",
+    "typegoose": "^5.6.0",
+    "@snyk/protect": "latest"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  }
+  },
+  "snyk": true
 }
