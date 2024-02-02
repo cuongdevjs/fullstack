@@ -33,7 +33,7 @@
     "apollo-server-express": "^2.6.1",
     "config": "^3.1.0",
     "graphql": "^14.3.1",
-    "graphql-toolkit": "^0.2.14",
+    "graphql-toolkit": "^0.7.5",
     "mongoose": "^5.5.12",
     "plaid": "^4.0.0",
     "reflect-metadata": "^0.1.13",
